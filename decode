@@ -1,0 +1,46 @@
+import base64
+
+decoded_string = "CgogICAgICAgIEhlbGxvLAoKICAgICAgICBXZSdyZSBnbGFkIHlvdSdyZSBoZXJlIQoKICAgICAgICBSYW1wIGhhcyBiZWVuIGZvcnR1bmF0ZSB0byBleHBlcmllbmNlIGV4cG9uZW50aWFsIGdyb3d0aCBvdmVyIHRoZSBwYXN0CiAgICAgICAgZmV3IHllYXJzIGFuZCB3aXRoIGl0IG91ciBhcHBsaWNhdGlvbiB2b2x1bWUgaGFzIHN1cmdlZC4KCiAgICAgICAgSW4gdGhpcyBzaXR1YXRpb24sIG1hbnkgc3RhcnR1cHMgb3B0IHRvIHVzZSBvZmYtdGhlLXNoZWxmIHRpbWVkIGxlZXRjb2RlCiAgICAgICAgc3R5bGUgU2FhUyB0b29scyB0byB0aGluIGFwcGxpY2F0aW9uIHZvbHVtZS4KCiAgICAgICAgV2UgdGhvdWdodCBwdXp6bGVzIGluIHRoZSBzcGlyaXQgb2YgYSBDVEZbMV0gd291bGQgYmUgbW9yZSBmdW4gYW5kIGEKICAgICAgICBiZXR0ZXIgZXhwcmVzc2lvbiBvZiBvdXIgdmFsdWVzLiBBcyB3ZSBleHBlY3QgeW91IHRvIHNwZW5kIGEgbGl0dGxlIGJpdAogICAgICAgIG9mIHRpbWUgb24gdGhpcyBnYXRpbmcgY2hhbGxlbmdlLCB3ZSB0aG91Z2h0IGl0IHdhcyBhcHByb3ByaWF0ZSB0aGF0IHdlCiAgICAgICAgcHV0IHRpbWUgYW5kIGVmZm9ydCBpbnRvIGNyYWZ0aW5nIGl0IG91cnNlbHZlcy4KCiAgICAgICAgV2UncmUgYXdhcmUgYW5zd2VycyBoZXJlIG1pZ2h0IGV2ZW50dWFsbHkgYmUgbGVha2VkIGFuZCB3ZSdsbCBwcm9iYWJseQogICAgICAgIGhhdmUgdG8gcmVmcmVzaCB0aGlzIGV2ZXJ5IGNvdXBsZSBtb250aHMgb3Igc28sIGJ1dCBwbGVhc2Uga2VlcCBpbiBtaW5kCiAgICAgICAgaXQnbGwgYmUgdmVyeSBlYXN5IHRvIHRlbGwgb25jZSB0aGF0IGhhcHBlbnMgYW5kIHdpbGwgb25seSByZXN1bHQgaW4KICAgICAgICBzbG93aW5nIGRvd24gb3VyIGFiaWxpdHkgdG8gcHJvY2VzcyBhcHBsaWNhdGlvbnMgLSBzbyBwbGVhc2Uga2VlcCB0aGUKICAgICAgICBmbGFncyB0byB5b3Vyc2VsZi4KCiAgICAgICAgQWxsIGZsYWdzIGFyZSBzZXZlbiBsZXR0ZXIgZGljdGlvbmFyeSB3b3Jkcy4KCiAgICAgICAgQWxsIGZsYWcgZ2F0ZXMgYXJlIGluZGVwZW5kZW50IG9mIGVhY2ggb3RoZXIgLSBpLmUuIHlvdSBkb24ndCBuZWVkIHRvCiAgICAgICAgZmluZCBvbmUgZmxhZyB0byB1bmxvY2sgdGhlIG5leHQgb25lLgoKICAgICAgICBQbGVhc2Ugc3VibWl0IGF0IGxlYXN0IHR3byBmbGFncywgYnV0IGZlZWwgZnJlZSB0byBzdWJtaXQgYXMgbWFueSBhcyB5b3UKICAgICAgICBjYW4gZmluZC4KCiAgICAgICAgRW5qb3khCgogICAgICAgIC0gUmFtcCBFbmdpbmVlcmluZyA8Y3RmQHJhbXAuY29tPgoKCiAgICAgICAgMTogaHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvQ2FwdHVyZV90aGVfZmxhZ18oY3liZXJzZWN1cml0eSkKCgogICAgICAgIA=="
+decoded_bytes = base64.b64decode(decoded_string)
+decoded_string = decoded_bytes.decode('utf-8')
+
+print(decoded_string)
+
+#output :  Hello,
+
+        We're glad you're here!
+
+        Ramp has been fortunate to experience exponential growth over the past
+        few years and with it our application volume has surged.
+
+        In this situation, many startups opt to use off-the-shelf timed leetcode
+        style SaaS tools to thin application volume.
+
+        We thought puzzles in the spirit of a CTF[1] would be more fun and a
+        better expression of our values. As we expect you to spend a little bit
+        of time on this gating challenge, we thought it was appropriate that we
+        put time and effort into crafting it ourselves.
+
+        We're aware answers here might eventually be leaked and we'll probably
+        have to refresh this every couple months or so, but please keep in mind
+        it'll be very easy to tell once that happens and will only result in
+        slowing down our ability to process applications - so please keep the
+        flags to yourself.
+
+        All flags are seven letter dictionary words.
+
+        All flag gates are independent of each other - i.e. you don't need to
+        find one flag to unlock the next one.
+
+        Please submit at least two flags, but feel free to submit as many as you
+        can find.
+
+        Enjoy!
+
+        - Ramp Engineering <ctf@ramp.com>
+
+
+        1: https://en.wikipedia.org/wiki/Capture_the_flag_(cybersecurity)
+
+
+        
